@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>RnD</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+  <!--caption hover over effect number 4 use that for people profile-->
+  <!--and then go find the movie...adicted to love-->
+  <!--navbar main  -->
+<div class= "navmain">
+	<ul class="icons">
+		<li class= "mainitems"><%= link_to 'ABOUT', root_path %></li>
+		<li class= "mainitems"><%= link_to 'KIDS HACKER CAMP', root_path %></li>
+		<li class= "mainitems"><%= link_to 'PROJECTS', root_path %></li>
+		<li class= "mainitems"><%= link_to 'USER PROFILES', root_path %></li>
+		<li class= "mainitems"><%= link_to 'BLOGS', root_path %></li>
+		<li class="mainitems"><%= link_to 'Team', root_path %></li>
+	</ul>	
+</div>
+
+<style type="text/css">
+	#segment{
+		height:400px;
+		width:850px;
+		clear:both;
+		border:1px solid silver;
+	}
+	#segment div{
+		float:right;
+		clear:right;
+		height:31.5%;
+		width: 40%;
+		margin:2px;
+
+		border: 1px solid silver;
+
+	}
+	.tabs{
+		height:98%;
+		width:58%;
+		margin:2px;
+
+		float:left;
+		clear:right;
+
+		border: 1px solid silver;
+	}
+
+	#featured{
+		height:600px;
+		width:850px;
+		clear:both;
+		border:1px solid silver;
+
+		margin-top:2px;
+	}
+	#featured div{
+		float:left;
+		height:46%;
+		width:49%;
+
+		clear:right;
+
+		margin:2px 2px 2px;
+		border:1px solid silver;
+	}
+	#ads2{
+		clear:both;
+		margin-top:2px;
+		height:100px;
+		/*width:1200px;*/
+		border: 1px solid silver;
+	}
+
+	.categoryA{
+		height:500px;
+		/*width:1200px;*/
+
+		margin-top:20px;
+		border:1px solid silver;
+	}
+	.categoryA div{
+		float:left;
+		clear:right;
+		height:99%;
+		width:32.7%;
+		margin:2px;
+
+		border: 1px solid silver;
+	}
+
+	#catfinal{
+		height:500px;
+		/*width:1200px;*/
+
+		margin-top:20px;
+		border:1px solid silver;
+	}
+	#catfinal div{
+		float:left;
+		clear:right;
+		height:99%;
+		width:24.5%;
+		margin:2px;
+
+		border: 1px solid silver;
+	}	
+
+	/*--------FOOTER NAVIGATION---------*/
+	#navigation{
+		border:1px solid silver;
+		margin-top: 5px;
+	}
+	#navigation ul{
+		align:right;
+		margin-top: 4px;
+		padding:5px; /*to achieve consistency across browsers*/
+		list-style-type: none;
+		text-align: left;
+	}
+	#navigation ul li{
+		display: inline;/*horizontal effect*/
+	}
+
+	#navigation ul li a{
+		text-decoration: none;
+		padding:0.5em 1em;/*gives the link space ousite its current block*/
+	}
+	/*---------FOOTER NAVIGATION---------*/
+</style>
+</head>
+<body>
+<div id="carousel">
+	<img src="img/1376_526df0cd20faf.jpg" style="height:450px; width:1170px;">
+</div >
+
+<div id="segment">
+	<!--<div class"tabs"></div> deal with later-->
+	<div></div>
+	<div></div>
+	<div></div>
+</div><!--segment-->
+
+<div id="featured">
+	<div>featured news</div>
+	<div>featured news</div>
+	<div>featured news</div>
+	<div>featured news</div>
+	<div style=" height:5%; width:98.8%; border:1px solid silver;">Page numbering</div>
+</div>
+<div id="ads2"></div>
+<div class="categoryA">
+	<div></div>
+	<div></div>
+	<div></div>
+</div>
+<div class="categoryA">
+	<div></div>
+	<div></div>
+	<div></div>
+</div>
+<div id="catfinal">
+	<div></div>
+	<div></div>
+	<div></div>
+	<div>
+subscribe form
+	</div>
+</div>
+<footer id="navigation">
+	<ul>
+		<li><%= link_to 'ABOUT', root_path %></li>
+		<li><%= link_to 'KIDS HACKER CAMP', root_path %></li>
+		<li><%= link_to 'PROJECTS', root_path %></li>
+		<li><%= link_to 'USER PROFILES', root_path %></li>
+		<li><%= link_to 'BLOGS', root_path %></li>
+	</ul>
+</footer>
+
+<%= yield %>
+
+
+</body>
+</html>
